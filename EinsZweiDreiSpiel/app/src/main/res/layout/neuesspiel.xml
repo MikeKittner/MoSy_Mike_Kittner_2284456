@@ -1,0 +1,136 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/neuesSpiel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@drawable/hintergrund123"
+    android:weightSum="1">
+
+
+    <ProgressBar
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressBar"
+    android:max="8"
+    android:progress="1" />
+
+    <TextView
+        android:id="@+id/frage"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginBottom="5dp"
+        android:text="Hier wird die Frage stehen. Sie könnte durchaus etwas länger
+        sein und über mehrere Zeilen gehen."
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:background="@drawable/quiztextfeld"
+
+        />
+
+    <!--
+        <TableLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+            android:layout_weight="0.50">
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+        android:id="@+id/antwortA"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Antwort A"
+            />
+
+        <Button
+        android:id="@+id/antwortB"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Antwort B" />
+             </TableRow>
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+        android:id="@+id/antwortC"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Antwort C" />
+
+        <Button
+        android:id="@+id/antwortD"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Antwort D" />
+        </TableRow>
+        </TableLayout>
+    -->
+
+    <TextView
+        android:id="@+id/antwort1Text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/antwort2Text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/antwort3Text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+
+        android:text="1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+    <SurfaceView
+        android:id="@+id/camerapreview"
+        android:layout_width="match_parent"
+        android:layout_height="248dp" />
+
+    <TextView
+        android:id="@+id/tv_progress_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Frage 1 von 10" />
+
+    <Button
+        android:id="@+id/buttonAbgeben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abgeben" />
+
+</LinearLayout>
